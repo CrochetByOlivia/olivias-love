@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" width="device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <title>Olivia's Love</title>
+  </head>
+  <style>
+    body {
+	  font-family: Arial, Helvetica, sans-serif;
+	  margin: 0;
+	  background-color: ;
+	}
+	.topnav {
+	  background-color: #ff9999;
+	  position: relative;
+	  top: 0;
+	  width: 100%;
+	  overflow: hidden;
+	}
+	.topnav a {
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  display: bock;
+	  text-align: center;
+	  float: left;
+	  color: white;
+	}
+	.topnav a:hover {
+	  background: #ff6666;
+	  color: black;
+	}
+	.menu-icon {
+	  width: 25px;
+	  height: 4px;
+	  background-color: white;
+	  margin: 5px;
+	}
+	#menu {
+		padding: 7px;
+	}
+	.sidenav {
+	  height: 100%;
+      width: 0;
+      position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #111;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 60px;
+	}
+
+	.sidenav a {
+	  padding: 8px 8px 8px 32px;
+	  text-decoration: none;
+	  font-size: 25px;
+	  color: #818181;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+      color: #f1f1f1;
+	}
+
+	.sidenav .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 25px;
+	  font-size: 36px;
+	  margin-left: 50px;
+	}
+
+	@media screen and (max-height: 450px) {
+	  .sidenav {padding-top: 15px;}
+	  .sidenav a {font-size: 18px;}
+	}
+	
+	#logo {
+	  background: #ff6666;
+	  color: white;
+	}
+	.modal {
+	  width: 90%; 
+	  margin: auto;
+	  text-align: center;
+	}
+	#price {
+	  background-color: #ff6666;
+	  padding: 4px;
+	  border-radius: 4px;
+	  font-style: oblique;
+	  font-weight: 1000;
+	}
+	.modal-content {
+	  border: 1px solid #996600;
+	  border-radius: 0 0 5px 5px;
+	  background-color: #ddd;
+	  margin: 10px 0;
+	}
+	.modal-content:hover{
+	  box-shadow: 0 8px 16px 0 #333;
+	}
+	#code{
+	  font-style: oblique;
+	}
+	.text{
+	  color: #996600;
+	}
+
+  </style>
+<body>
+  <div class="topnav">
+    <a href="javascript:void(0);" id="menu" onclick="openNav()">
+	  <div class="menu-icon"></div>
+	  <div class="menu-icon"></div>
+	  <div class="menu-icon"></div>
+	</a>
+	<a href="#" id="logo">Olivia's Love</a>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="#">Home</a>
+	<a href="#">News</a>
+	<a href="#">Contact</a>
+	<a href="#">About</a>
+  </div>
+ 
+  
+  <div class="modal">
+    <div class="modal-content">
+      <img src="Tulips.jpg" alt="tulips" width="100%">
+	  <p class="text">Tulips are so beautiful.</p>
+	  <p id="code">code - CC001</p>
+	  <p><span id="price">$30.35</span></p>
+    </div>
+	
+	<div class="modal-content">
+      <img src="Desert.jpg" alt="tulips" width="100%">
+	  <p class="text">Have you ever go to the Desert.</p>
+	  <p id="code">code - CC002</p>
+	  <p><span id="price">$30.35</span></p>
+    </div>
+	<div class="modal-content">
+      <img src="Tulips.jpg" alt="tulips" width="100%">
+	  <p class="text">Tulips are most beautiful flower.</p>
+	  <p id="code">code - CC003</p>
+	  <p><span id="price">$30.35</span></p>
+    </div>
+  </div>
+</body>
+<script>
+  function openNav() {
+    var a = document.getElementById("mySidenav");
+    a.style.width = "250px";
+  }
+
+  function closeNav() {
+    var b = document.getElementById("mySidenav");
+    b.style.width = "0";
+  }
+</script>
+</html>
